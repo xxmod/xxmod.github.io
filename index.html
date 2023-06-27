@@ -55,23 +55,6 @@
     .red-text {
       color: #e53935;
     }
-    
-    .random-button {
-      margin-top: 10px;
-      padding: 8px 12px;
-      font-size: 16px;
-      background-color: #4caf50;
-      color: white;
-      border: none;
-      cursor: pointer;
-      border-radius: 4px;
-    }
-    
-    .random-result {
-      margin-top: 10px;
-      font-size: 18px;
-      font-weight: bold;
-    }
   </style>
 </head>
 <body>
@@ -108,26 +91,21 @@
     <!-- 这里将显示最终的 Banpick 结果 -->
   </div>
   
-  <!-- 随机数抽取器 -->
-  <h2>随机数抽取器</h2>
-  <button class="random-button" onclick="startRandom()">开始抽取</button>
-  <div class="random-result" id="random-result"></div>
-  
   <script>
     // JavaScript 代码
     const teamBlueInput = document.getElementById('team-blue');
     const teamRedInput = document.getElementById('team-red');
     const mapList = document.getElementById('map-list');
     const banpickResult = document.getElementById('banpick-result');
-    const randomResult = document.getElementById('random-result');
     const maps = []; // 存储可供选择的地图
-    let turn = ''; // 当前轮到的队伍（红队或蓝队）
-    let bannedMaps = []; // 存储被禁用的地图
     
     // 初始化地图列表
     for (let i = 0; i < mapList.children.length; i++) {
       maps.push(mapList.children[i]);
     }
+    
+    let turn = 'blue'; // 当前轮到的队伍（红队或蓝队）
+    let bannedMaps = []; // 存储被禁用的地图
     
     function banMap(element) {
       const selectedMap = element.innerHTML;
@@ -177,20 +155,6 @@
         }
       }
       return '';
-    }
-    
-    function startRandom() {
-      const randomNumber = Math.floor(Math.random() * 10) + 1; // 生成1到10之间的随机数
-      
-      if (randomNumber % 2 === 0) {
-        turn = 'red';
-        randomResult.innerHTML = '随机数为偶数，红方先 ban。';
-      } else {
-        turn = 'blue';
-        randomResult.innerHTML = '随机数为奇数，蓝方先 ban。';
-      }
-      
-      updateBanpickResult();
     }
   </script>
 </body>
