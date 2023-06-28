@@ -3,14 +3,14 @@
 <head>
   <title>CS:GO BO1 Banpick</title>
   <style>
-    /* CSS ÑùÊ½ */
+    /* CSS æ ·å¼ */
     body {
       font-family: Arial, sans-serif;
       background-color: #f9f9f9;
       padding: 20px;
       box-sizing: border-box;
     }
-    
+     
     h1 {
       color: #333;
     }
@@ -64,9 +64,9 @@
       margin-right: 10px;
     }
     
-    /* ×ÔÊÊÓ¦²¼¾Ö */
+    /* è‡ªé€‚åº”å¸ƒå±€ */
     @media only screen and (min-width: 768px) {
-      /* ´óÆÁÄ»ÑùÊ½ */
+      /* å¤§å±å¹•æ ·å¼ */
       body {
         max-width: 1200px;
         margin: 0 auto;
@@ -84,7 +84,7 @@
       }
     }
     
-    /* Material You ÑÕÉ«±äÁ¿ */
+    /* Material You é¢œè‰²å˜é‡ */
     :root {
       --brand-color: #6200ee;
       --on-brand-color: #ffffff;
@@ -96,55 +96,55 @@
 <body>
   <h1>CS:GO BO1 Banpick</h1>
   
-  <!-- ºì¶ÓÃû³Æ -->
+  <!-- çº¢é˜Ÿåç§° -->
   <div class="team-name">
-    <label for="team-red">ºì¶ÓÃû³Æ£º</label>
-    <input type="text" id="team-red" placeholder="ÇëÊäÈëºì¶ÓÃû³Æ" />
+    <label for="team-red">çº¢é˜Ÿåç§°ï¼š</label>
+    <input type="text" id="team-red" placeholder="è¯·è¾“å…¥çº¢é˜Ÿåç§°" />
   </div>
   
-  <!-- À¶¶ÓÃû³Æ -->
+  <!-- è“é˜Ÿåç§° -->
   <div class="team-name">
-    <label for="team-blue">À¶¶ÓÃû³Æ£º</label>
-    <input type="text" id="team-blue" placeholder="ÇëÊäÈëÀ¶¶ÓÃû³Æ" />
+    <label for="team-blue">è“é˜Ÿåç§°ï¼š</label>
+    <input type="text" id="team-blue" placeholder="è¯·è¾“å…¥è“é˜Ÿåç§°" />
   </div>
   
-  <!-- µØÍ¼ÁĞ±í -->
-<h2>µØÍ¼ÁĞ±í</h2>
+  <!-- åœ°å›¾åˆ—è¡¨ -->
+<h2>åœ°å›¾åˆ—è¡¨</h2>
 <ul id="map-list">
-  <!-- ÕâÀï½«ÏÔÊ¾ËùÓĞµÄµØÍ¼Ñ¡Ïî -->
-  <li onclick="banMap(this)" style="background-image: url(ÖËÈÈÉ³³Ç2.jpg)">ÖËÈÈÉ³³Ç2</li>
-  <li onclick="banMap(this)" style="background-image: url(Á¶ÓüĞ¡Õò.jpg)">Á¶ÓüĞ¡Õò</li>
-  <li onclick="banMap(this)" style="background-image: url(ºË×ÓÎ£»ú.jpg)">ºË×ÓÎ£»ú</li>
-  <li onclick="banMap(this)" style="background-image: url(»ÄÄ®ÃÔ³Ç.jpg)">»ÄÄ®ÃÔ³Ç</li>
-  <li onclick="banMap(this)" style="background-image: url(ËÀÍöÓÎÀÖÔ°.jpg)">ËÀÍöÓÎÀÖÔ°</li>
-  <li onclick="banMap(this)" style="background-image: url(éæÃü´óÏÃ.jpg)">éæÃü´óÏÃ</li>
-  <li onclick="banMap(this)" style="background-image: url(Ô¶¹ÅÒÅ¼£.png)">Ô¶¹ÅÒÅ¼£</li>
-  <li onclick="banMap(this)" style="background-image: url(°¢Å¬±ÈË¹.png)">°¢Å¬±ÈË¹</li>
-  <li onclick="banMap(this)" style="background-image: url(ËÀ³ÇÖ®ÃÕ.jpg)">ËÀ³ÇÖ®ÃÕ</li>
+  <!-- è¿™é‡Œå°†æ˜¾ç¤ºæ‰€æœ‰çš„åœ°å›¾é€‰é¡¹ -->
+  <li onclick="banMap(this)" style="background-image: url(ç‚™çƒ­æ²™åŸ2.jpg)">ç‚™çƒ­æ²™åŸ2</li>
+  <li onclick="banMap(this)" style="background-image: url(ç‚¼ç‹±å°é•‡.jpg)">ç‚¼ç‹±å°é•‡</li>
+  <li onclick="banMap(this)" style="background-image: url(æ ¸å­å±æœº.jpg)">æ ¸å­å±æœº</li>
+  <li onclick="banMap(this)" style="background-image: url(è’æ¼ è¿·åŸ.jpg)">è’æ¼ è¿·åŸ</li>
+  <li onclick="banMap(this)" style="background-image: url(æ­»äº¡æ¸¸ä¹å›­.jpg)">æ­»äº¡æ¸¸ä¹å›­</li>
+  <li onclick="banMap(this)" style="background-image: url(æ®’å‘½å¤§å¦.jpg)">æ®’å‘½å¤§å¦</li>
+  <li onclick="banMap(this)" style="background-image: url(è¿œå¤é—è¿¹.png)">è¿œå¤é—è¿¹</li>
+  <li onclick="banMap(this)" style="background-image: url(é˜¿åŠªæ¯”æ–¯.png)">é˜¿åŠªæ¯”æ–¯</li>
+  <li onclick="banMap(this)" style="background-image: url(æ­»åŸä¹‹è°œ.jpg)">æ­»åŸä¹‹è°œ</li>
 </ul>
 
   
-  <!-- Banpick ½á¹û -->
-  <h2>Banpick ½á¹û</h2>
+  <!-- Banpick ç»“æœ -->
+  <h2>Banpick ç»“æœ</h2>
   <div id="banpick-result">
-    <!-- ÕâÀï½«ÏÔÊ¾×îÖÕµÄ Banpick ½á¹û -->
+    <!-- è¿™é‡Œå°†æ˜¾ç¤ºæœ€ç»ˆçš„ Banpick ç»“æœ -->
   </div>
   
   <script>
-    // JavaScript ´úÂë
+    // JavaScript ä»£ç 
     const teamBlueInput = document.getElementById('team-blue');
     const teamRedInput = document.getElementById('team-red');
     const mapList = document.getElementById('map-list');
     const banpickResult = document.getElementById('banpick-result');
-    const maps = []; // ´æ´¢¿É¹©Ñ¡ÔñµÄµØÍ¼
+    const maps = []; // å­˜å‚¨å¯ä¾›é€‰æ‹©çš„åœ°å›¾
     
-    // ³õÊ¼»¯µØÍ¼ÁĞ±í
+    // åˆå§‹åŒ–åœ°å›¾åˆ—è¡¨
     for (let i = 0; i < mapList.children.length; i++) {
       maps.push(mapList.children[i]);
     }
     
-    let turn = 'blue'; // µ±Ç°ÂÖµ½µÄ¶ÓÎé£¨ºì¶Ó»òÀ¶¶Ó£©
-    let bannedMaps = []; // ´æ´¢±»½ûÓÃµÄµØÍ¼
+    let turn = 'blue'; // å½“å‰è½®åˆ°çš„é˜Ÿä¼ï¼ˆçº¢é˜Ÿæˆ–è“é˜Ÿï¼‰
+    let bannedMaps = []; // å­˜å‚¨è¢«ç¦ç”¨çš„åœ°å›¾
     
     function banMap(element) {
       const selectedMap = element.innerHTML;
@@ -154,10 +154,10 @@
       element.style.pointerEvents = 'none';
       
       if (bannedMaps.length < maps.length - 1) {
-        // »¹Î´½ûÓÃÍêËùÓĞµØÍ¼
-        turn = turn === 'red' ? 'blue' : 'red'; // ÇĞ»»¶ÓÎé
+        // è¿˜æœªç¦ç”¨å®Œæ‰€æœ‰åœ°å›¾
+        turn = turn === 'red' ? 'blue' : 'red'; // åˆ‡æ¢é˜Ÿä¼
       } else {
-        // ËùÓĞµØÍ¼½ûÓÃÍê±Ï£¬Ö»Ê£×îºóÒ»ÕÅÎ´½ûÓÃµÄµØÍ¼£¬Ö±½ÓÑ¡Ôñ
+        // æ‰€æœ‰åœ°å›¾ç¦ç”¨å®Œæ¯•ï¼Œåªå‰©æœ€åä¸€å¼ æœªç¦ç”¨çš„åœ°å›¾ï¼Œç›´æ¥é€‰æ‹©
         const remainingMap = getRemainingMap();
         selectMap(remainingMap);
       }
@@ -166,8 +166,8 @@
     }
     
     function selectMap(selectedMap) {
-      banpickResult.innerHTML = `Ñ¡³öµÄµØÍ¼: ${selectedMap}`;
-      // ¿ÉÒÔÔÚÕâÀï½øĞĞ½øÒ»²½µÄ´¦Àí£¬ÈçÏÔÊ¾Ñ¡Ôñ½á¹û¡¢´æ´¢Êı¾İµÈ
+      banpickResult.innerHTML = `é€‰å‡ºçš„åœ°å›¾: ${selectedMap}`;
+      // å¯ä»¥åœ¨è¿™é‡Œè¿›è¡Œè¿›ä¸€æ­¥çš„å¤„ç†ï¼Œå¦‚æ˜¾ç¤ºé€‰æ‹©ç»“æœã€å­˜å‚¨æ•°æ®ç­‰
     }
     
     function updateBanpickResult() {
@@ -175,15 +175,15 @@
       
       for (let i = 0; i < bannedMaps.length; i++) {
         if (i % 2 === 0) {
-          banpickResult.innerHTML += `<span class="blue-text">${teamBlueInput.value} ½ûÓÃ: ${bannedMaps[i]}</span><br>`;
+          banpickResult.innerHTML += `<span class="blue-text">${teamBlueInput.value} ç¦ç”¨: ${bannedMaps[i]}</span><br>`;
         } else {
-          banpickResult.innerHTML += `<span class="red-text">${teamRedInput.value} ½ûÓÃ: ${bannedMaps[i]}</span><br>`;
+          banpickResult.innerHTML += `<span class="red-text">${teamRedInput.value} ç¦ç”¨: ${bannedMaps[i]}</span><br>`;
         }
       }
       
       if (bannedMaps.length === maps.length - 1) {
         const remainingMap = getRemainingMap();
-        banpickResult.innerHTML += `Ñ¡³öµÄµØÍ¼: ${remainingMap}`;
+        banpickResult.innerHTML += `é€‰å‡ºçš„åœ°å›¾: ${remainingMap}`;
       }
     }
     
