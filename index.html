@@ -154,7 +154,7 @@
     function banMap(element) {
   const selectedMap = element.innerHTML;
   bannedMaps.push(selectedMap);
-  
+  element.style.display = 'none';
   element.style.backgroundColor = '#ccc';
   element.style.pointerEvents = 'none';
   
